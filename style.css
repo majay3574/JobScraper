@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
 }
 
@@ -43,8 +43,8 @@ h1 {
 }
 
 .glow {
-  color: #000000;
-  text-shadow: 0 0 5px #0d0f0c, 0 0 10px #0d1b06;
+  color: #38b000;
+  text-shadow: 0 0 5px #38b000, 0 0 10px #38b000;
 }
 
 label {

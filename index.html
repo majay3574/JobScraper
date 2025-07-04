@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Job Scraper - AjayMichael</title>
+  <title>Job Scraper - Miwa 💼</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
   <div class="animated-bg"></div>
   <div class="container">
-    <h1>👩‍💻 Job Scraper <span>by AjayMichael</span></h1>
+    <h1>💼 Job Scraper <span class="glow">by Miwa</span></h1>
 
     <label for="apikey">🔐 API Key:</label>
-    <input type="password" id="apikey" placeholder="Enter your API Key" />
+    <input type="password" id="apikey" placeholder="Enter your Groq API Key" />
 
     <label for="model">🤖 Select Model:</label>
     <select id="model">
@@ -25,11 +26,12 @@
     <input type="text" id="url" placeholder="Paste Naukri job URL" />
 
     <button onclick="scrapeJob()">⚡ Scrape Job</button>
+    <button onclick="downloadResult()" id="downloadBtn" style="display: none;">⬇️ Download Text</button>
+    <button onclick="downloadExcel()" id="downloadExcelBtn" style="display: none;">📥 Download Excel</button>
 
     <h2>📄 Scraped Result:</h2>
     <div id="loading" class="loader" style="display: none;"></div>
     <pre id="response" class="typing"></pre>
-    <button onclick="downloadResult()" id="downloadBtn" style="display: none;">⬇️ Download Result</button>
   </div>
 
   <script src="server.js"></script>
