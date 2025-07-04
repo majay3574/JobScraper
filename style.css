@@ -43,8 +43,8 @@ h1 {
 }
 
 .glow {
-  color: #38b000;
-  text-shadow: 0 0 5px #38b000, 0 0 10px #38b000;
+  color: #000000;
+  text-shadow: 0 0 5px #0d0f0c, 0 0 10px #0d1b06;
 }
 
 label {
