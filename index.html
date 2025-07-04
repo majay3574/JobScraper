@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Scraper - Miwa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="animated-bg"></div>
+  <div class="container">
+    <h1>👩‍💻 Job Scraper <span class="glow">by Miwa</span></h1>
+
+    <label for="apikey">🔐 API Key:</label>
+    <input type="password" id="apikey" placeholder="Enter your API Key" />
+
+    <label for="model">🤖 Select Model:</label>
+    <select id="model">
+      <option value="llama-3.3-70b-versatile">LLaMA 3.3 - 70B</option>
+      <option value="mixtral-8x7b-instruct">Mixtral 8x7B Instruct</option>
+      <option value="gemma-7b-it">Gemma 7B</option>
+    </select>
+
+    <label for="url">🌐 Naukri Job URL:</label>
+    <input type="text" id="url" placeholder="Paste Naukri job URL" />
+
+    <button onclick="scrapeJob()">⚡ Scrape Job</button>
+
+    <h2>📄 Scraped Result:</h2>
+    <div id="loading" class="loader" style="display: none;"></div>
+    <pre id="response" class="typing"></pre>
+    <button onclick="downloadResult()" id="downloadBtn" style="display: none;">⬇️ Download Result</button>
+  </div>
+
+  <script src="server.js"></script>
+</body>
+</html>
